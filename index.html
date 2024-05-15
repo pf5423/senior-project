@@ -1,28 +1,779 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="main.css" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Atlas Security</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="libraries/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="libraries/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="libraries/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="libraries/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
 </head>
-<body>
-  <div class="app-wrap">
-    <header>
-      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
-    </header>
-    <main>
-      <section class="location">
-        <div class="city">New York, US</div>
-        <div class="date">Wednesday 22 July 2020</div>
-      </section>
-      <div class="current">
-        <div class="temp">15<span>°c</span></div>
-        <div class="weather">Sunny</div>
-        <div class="hi-low">13°c / 16°c</div>
+
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="img/logo.png" alt="Atlas Security Logo">
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="">Home</a></li>
+          <li><a href="index.html#about" class="active">About</a></li>
+          <li><a href="index.html#useful-links" class="">Links</a></li>
+          <li><a href="index.html#faq" class="">FAQ</a></li>
+          <li><a href="index.html#news">News</a></li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- End Nav Menu -->
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- Hero Section - Home Page -->
+    <section id="hero" class="hero">
+
+      <img src="img/hero-bg.png" alt="https://www.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_14803715.htm#page=2&query=technology&position=2&from_view=search&track=sph&uuid=21d8749b-c997-40f5-95af-e406d12ca574" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Atlas Security</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Your Source for Actionable Cyber Advice</p>
+          </div>
+          <div class="col-lg-5">
+          </div>
+        </div>
       </div>
-    </main>
+
+    </section><!-- End Hero Section -->
+
+    <!-- Social Media Section - Home Page -->
+    <section id="companies" class="companies">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="img/social-media/client-1r.png" class="img-fluid" alt="">
+            <p>453,427 usernames and passwords leaked (2012)</p>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="img/social-media/client-2r.png" class="img-fluid" alt="">
+            <p>164 Million e-mails and passwords leaked (2016)</p>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="img/social-media/client-3r.png" class="img-fluid" alt="" style="padding:58px;">
+            <p> 500 Million phones, DOBs, employers, etc. leaked (2021)</p>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="img/social-media/client-4r.png" class="img-fluid" alt="" style="padding:58px;">
+            <p>360 Million e-mails and passwords leaked (2008)</p>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="img/social-media/client-5r.png" class="img-fluid" alt="">
+            <p>153 Million passwords, hints, and emails leaked in plain text (2013)</p>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="img/social-media/client-6r.png" class="img-fluid" alt="">
+            <p>Estimated 263 Million compromised accounts (2015)</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> <!-- End of Social Media Section -->
+
+    <!-- About Section - Home Page -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h3>About Us</h3>
+            <h2>We survey trends across the internet to better understand how your data works</h2>
+            <p>The internet is where millions of viruses are spread daily to computers across the world. The most important barrier to preventing that?
+              <br> <br> <b>YOU!</b>
+                <br> <br> Most data breaches occur because of human error, and it is our job to inform the public of these dangers.</p>
+            <a href="index.html#news" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-buildings"></i>
+                  <h3>Corporate Costs</h3>
+                  <p>The average data breach costs a US company $9.44 million in damages, which is
+                     the highest in the world.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-clipboard-pulse"></i>
+                  <h3>Small Businesses</h3>
+                  <p>56% of small business owners have no concern over data breaches, and retain no backups.</p> 
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-command"></i>
+                  <h3>The Cloud</h3>
+                  <p>45% of data breaches target cloud computing, and the costs of such attacks can reach up to $5.02 million</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h3>Threats On the Rise</h3>
+                  <p>Despite widespread use of anti-virus software, more than half a million new viruses are declared per day, majority being trojans.</p>
+                  
+                </div>
+              </div> <!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- Stats Section - Home Page -->
+    <section id="stats" class="stats">
+
+      <img src="img/stats-bg.png" alt="https://www.freepik.es/fotos-premium/icono-candado-digital-tecnologia-ciberseguridad-red-tecnologia-proteccion-datos-tablero-virtual-tecnologias-innovadoras-futuristas-ia-generativa_44597927.htm" data-aos="fade-in">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Percent of data breaches occur due to human error</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Million phishing attacks occurred in 2022 globally</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="250000" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Dollars of cost per hour of downtime after malware attacks for companies</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="62" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Percent of global organizations are not prepared to handle a cyber attack</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Stats Section -->
+
+    <!-- Useful Links Section - Home Page -->
+    <section id="useful-links" class="useful-links">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Useful Links</h2>
+        <p>Learn more about your personal data security through these websites</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="link-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div>
+                <h4 class="title">What is Cybersecurity?</h4>
+                <p class="description">Learn more about what cybersecurity is:</p>
+                <ul>
+                  <li><a target="_blank" href='https://www.ibm.com/topics/cybersecurity#:~:text=Cybersecurity%20aims%20to%20protect%20individuals,attacks%2C%20and%20everything%20in%20between'>IBM</a></li>
+                  <li><a target="_blank"  href='https://www.cisa.gov/news-events/news/what-cybersecurity'>United States CISA: What is Cybersecurity</a></li>
+                </ul>
+                
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+            <div class="link-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+              <div>
+                <h4 class="title">Protecting your data?</h4>
+                <p class="description">There are many steps you can take to protect your data on the internet:</p>
+                  <ul>
+                    <li><a target="_blank" href='https://www.cisa.gov/news-events/news/4-things-you-can-do-keep-yourself-cyber-safe'>United States CISA: 4 Things you can do to keep yourself cyber safe</a></li>
+                    <li><a target="_blank" href='https://dfi.wa.gov/consumers/cyber-attacks-tips'>Washington State DFI</a></li>
+                    <li><a target="_blank" href='https://www.cisa.gov/news-events/news/protect-myself-cyberattacks'>United States CISA: Protect myself from Cyberattacks</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="link-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div>
+                <h4 class="title">Why is It Important?</h4>
+                <p class="description">Many people underestimate the far-reaching effects of data leaks, but there are many reasons as to why you should protect yourself:</p>
+                <ul>
+                  <li><a target="_blank" href='https://www.linkedin.com/pulse/what-data-breach-karn-the-karn/' >What is a Data Breach?</a></li>
+                  <li><a target="_blank" href='https://pecb.com/article/why-is-data-protection-important' >Why is Data Protection Important?</a></li>
+                </ul>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="link-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+              <div>
+                <h4 class="title">Getting Hired?</h4>
+                  <p class="description">The market for cybersecurity professionals is rising more and ever before, with a <a href="https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm#tab-6" >32% rise in job openings</a>, now is the best time to break into the field of technology:</p>
+                  <ul>
+                    <li>
+                      <a target="_blank" href='https://www.cisa.gov/careers/cybersecurityit-jobs' >United States CISA: Jobs in Cybersecurity</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href='https://www.sans.org/cybersecurity-careers/20-coolest-cyber-security-careers/' >Sans: 20 Coolest Careers in Cybersecurity</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href='https://niccs.cisa.gov/cybersecurity-career-resources/interactive-cybersecurity-career-map' >NICCS: Interactive Cybersecurity Career Map</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Useful Links Section -->
+
+
+    <!-- Faq Section - Home Page -->
+    <section id="faq" class="faq">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                Here are some frequently asked questions regarding cybersecurity and the safety of your data online:
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                
+                <h3><span class="num">1.</span> <span>What does protecting my personal data mean and why does it matter?</span></h3>
+                <div class="faq-content">
+                  <p>Safeguarding your private digital information, accounts, and devices from unauthorized access is important 
+                    because as more of life moves online, data security is essential to avoid fraud, theft, stalking and other issues.
+</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>What are the main threats to my personal data security right now?</span></h3>
+                <div class="faq-content">
+                  <p>Phishing scams, computer infections, corporations with data breaches, hackers guessing 
+                    passwords, public WiFi snooping, and shady apps capturing user data are major threats that 
+                    can access your private files and accounts.
+</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>What are quick steps I can take to better protect my data?</span></h3>
+                <div class="faq-content">
+                  <p>
+                    <ul>
+                      <li>Use a password manager</li>
+                      <li>Turn on two-factor authentication</li>
+                      <li>Be wary of phishing attempts</li>
+                      <li>Only download software from official sources and keep everything updated</li>
+                      <li>Use a VPN when connected to public WiFi</li>
+                    </ul>
+</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>How do smart home devices like virtual assistants impact my personal data protections?</span></h3>
+                <div class="faq-content">
+                  <p>Smart home devices collect incredible private data and get 
+                    frequently targeted by hackers. Tweaking privacy settings, 
+                    using complex passphrases, updating firmware, and limiting financial
+                     info access can help reduce, but not eliminate, risks which require ongoing mindfulness.
+</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>How do social media and mobile apps access and utilize my private data?</span></h3>
+                <div class="faq-content">
+                  <p>Social media platforms and smartphone apps, even basic games and utilities, 
+                    often collect vast amounts of personal data from users, ranging from location traces, contacts, 
+                    messages, photos, search histories, biometric data, behavioral usage patterns and more by tracking your internet usage and digital footprint. 
+                    This data allows companies to train algorithms and target advertising, but it can also 
+                    expose sensitive information if improperly secured.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Faq Section -->
+
+
+    <!-- Data Usage Section - Home Page -->
+    <section id="data-usage" class="data-usage">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+            <h3>Data Usage</h3>
+            <p>
+            Approximately less than 9% of Americans read the Privacy Policy of 
+            a company before accepting
+            , meaning that hundreds of millions of users are unaware of how their
+             data is really being used on the these platforms:
+            </p>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="swiper">
+              <template class="swiper-config">
+                {
+                "loop": true,
+                "speed" : 600,
+                "autoplay": {
+                "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+                }
+                }
+              </template>
+
+              <div class="swiper-wrapper" id="swiper-wrapper-aba9d4aa68282aa1" aria-live="off" style="transform: translate3d(-4824px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group" aria-label="1 / 5">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage1.png" class="data-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>YouTube</h3>
+                       
+                      </div>
+                    </div>
+                    <p>
+                      
+                      <span>
+                        YouTube collects extensive data on user activity across its platform, including watch history, searches, video interactions, and profile information. By aggregating this personal data around interests and behaviors, YouTube can feed it into its evolving machine learning systems to improve video recommendations, suggested content, and targeted advertising specifically tailored to each user. This vast collection of data points and usage insights has supported advancements in YouTube's artificial intelligence capabilities which further enhance predictions of viewer preferences. It also powers a robust ad business where ads can be highly customized based on analysis of user data and interests. YouTube strikes a balance between using data to enhance the user experience through relevancy and customization, while also monetizing through advertising driven by key consumer insights revealed through that data.
+                      </span>
+                      
+                    </p>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" role="group" aria-label="2 / 5">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage2.png" class="data-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Google</h3>
+                       
+                      </div>
+                    </div>
+                    <p>
+                      
+                      <span>
+Google systematically aggregates personal user data across its massive global 
+                        video platform, leveraging the amassed high-dimension insights to continually refine 
+                        its machine learning algorithms for more relevant video predictions, recommendations 
+                        and targeted advertising. This extensive collection of individual usage data spanning 
+                        watched content, search queries, and user interactions has fueled Google's advancements 
+                        in artificial intelligence and its massive advertising business centered around segmented 
+                        consumer insights.
+
+                      </span>
+                      
+                    </p>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group" aria-label="3 / 5">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage3.png" class="data-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Amazon</h3>
+                       
+                      </div>
+                    </div>
+                    <p>
+                      
+                      <span>Using its market dominance and cloud infrastructure, Amazon captures extensive 
+                        data on purchasing habits, media consumption, smart home activities, and device usage 
+                        patterns from millions of people, employing intrusive surveillance techniques that raise 
+                        civil 
+                        liberty concerns. With little transparency and inadequate consent controls, Amazon monetizes
+                         the aggregated behavioral data and movement profiles through targeted advertising and
+                          market insights to expand revenues at the expense of user privacy.</span>
+                      
+                    </p>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="3" role="group" aria-label="4 / 5">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage4.png" class="data-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Apple</h3>
+                       
+                      </div>
+                    </div>
+                    <p>
+                      
+                      <span>Exploiting its popularity and integrated device ecosystem to maximize profits, Apple 
+                        persistently extracts a vast array of personal usage data spanning locations, communications
+                        , and content behaviors from hundreds of millions of iPhone, iPad, and Mac users worldwide.
+                         This aggregation of sensitive user insights with limited oversight fuels Apple's 
+                         advertising and service offerings, risking individual privacy while allowing the company 
+                         to reap record revenues built on surveillance capitalism.</span>
+                      
+                    </p>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="4" role="group" aria-label="5 / 5">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage5.png" class="data-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Instagram</h3>
+                       
+                      </div>
+                    </div>
+                    <p>
+                      
+                      <span>With its role in culture and social networking, Instagram persistently 
+                        extracts personal insights like locations visited, communications, interests, and 
+                        social connections from the content and habits of over a billion users, employing 
+                        ethically questionable tracking methods. Instagram then uses this aggregated 
+                        private data to enable harmful targeted advertising, prioritizing profit over people in 
+                        a manner that can risk both individual privacy and have unwarranted societal impacts 
+                        from its behavior-shaping platform.</span>
+                      
+                    </p>
+                  </div>
+                </div>
+<!-- First 5 items -->
+
+
+
+
+
+                <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" role="group" aria-label="1 / 5">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage1.png" class="data-img flex-shrink-0" style="padding: 5px;" alt="">
+                      <div>
+                        <h3>YouTube</h3>
+                       
+                      </div>
+                    </div>
+                    <p>
+                      
+                      <span>YouTube collects extensive data on user activity across its platform, including watch history, searches, video interactions, and profile information. By aggregating this personal data around interests and behaviors, YouTube can feed it into its evolving machine learning systems to improve video recommendations, suggested content, and targeted advertising specifically tailored to each user. This vast collection of data points and usage insights has supported advancements in YouTube's artificial intelligence capabilities which further enhance predictions of viewer preferences. It also powers a robust ad business where ads can be highly customized based on analysis of user data and interests. YouTube strikes a balance between using data to enhance the user experience through relevancy and customization, while also monetizing through advertising driven by key consumer insights revealed through that data.</span>
+                      
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 5">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage2.png" class="data-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Google</h3>
+                       
+                      </div>
+                    </div>
+                    <p>
+                      
+                      <span>Google systematically aggregates personal user data across its massive global 
+                        video platform, leveraging the amassed high-dimension insights to continually refine 
+                        its machine learning algorithms for more relevant video predictions, recommendations 
+                        and targeted advertising. This extensive collection of individual usage data spanning 
+                        watched content, search queries, and user interactions has fueled Google's advancements 
+                        in artificial intelligence and its massive advertising business centered around segmented 
+                        consumer insights.</span>
+                      
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage3.png" class="data-img flex-shrink-0" style="height: 80px; width: auto; padding: 10px" alt="">
+                      <div>
+                        <h3>Amazon</h3>
+                       
+                      </div>
+                    </div>
+                    <p>
+                      
+                      <span>Using its market dominance and cloud infrastructure, Amazon captures extensive 
+                        data on purchasing habits, media consumption, smart home activities, and device usage 
+                        patterns from millions of people, employing intrusive surveillance techniques that raise 
+                        civil 
+                        liberty concerns. With little transparency and inadequate consent controls, Amazon monetizes
+                         the aggregated behavioral data and movement profiles through targeted advertising and
+                          market insights to expand revenues at the expense of user privacy.</span>
+                      
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="3" role="group" aria-label="4 / 5">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage4.png" class="data-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Apple</h3>
+                      
+                      </div>
+                    </div>
+                    <p>
+                      
+
+                      <span>Exploiting its popularity and integrated device ecosystem to maximize profits, Apple 
+                        persistently extracts a vast array of personal usage data spanning locations, communications
+                        , and content behaviors from hundreds of millions of iPhone, iPad, and Mac users worldwide.
+                         This aggregation of sensitive user insights with limited oversight fuels Apple's 
+                         advertising and service offerings, risking individual privacy while allowing the company 
+                         to reap record revenues built on surveillance capitalism.</span>
+                      
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="4" role="group" aria-label="5 / 5">
+                  <div class="data-item">
+                    <div class="d-flex">
+                      <img src="img/data-usage/data-usage5.png" class="data-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Instagram</h3>
+                        
+                      </div>
+                    </div>
+                    <p>
+                      
+                      <span>With its role in culture and social networking, Instagram persistently 
+                        extracts personal insights like locations visited, communications, interests, and 
+                        social connections from the content and habits of over a billion users, employing 
+                        ethically questionable tracking methods. Instagram then uses this aggregated 
+                        private data to enable harmful targeted advertising, prioritizing profit over people in 
+                        a manner that can risk both individual privacy and have unwarranted societal impacts 
+                        from its behavior-shaping platform.</span>
+                      
+                    </p>
+                  </div>
+                </div></div>
+
+                
+              <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 5" aria-current="true"></span></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Data Usage Section -->
+
+    <!-- Call-to-action Section - Home Page -->
+    <section id="call-to-action" class="call-to-action">
+
+      <img src="img/cta-bg.png" alt="https://www.freepik.com/free-vector/blue-futuristic-networking-technology_15082511.htm#query=technology&position=0&from_view=search&track=sph&uuid=21d8749b-c997-40f5-95af-e406d12ca574">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Share this to the World!</h3>
+              <p>Cybersecurity education is not widespread among the general public, 
+                let alone the general digital population. It's time to help raise awareness on the 
+                importance of data security and recovery from data breaches. 
+                Share this information by tweeting with the #AtlasSecurity!</p>
+              <a class="cta-btn" target="_blank" href="https://twitter.com/intent/tweet?text=Let's%20educate%20ourselves%20on%20the%20importance%20of%20our%20Data%20and%20Cybersecurity!%20%23AtlasSecurity">Share via X!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Call-to-action Section -->
+
+    <!-- News Section - Home Page -->
+    <section id="news" class="news">
+
+       <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Tech News Today</h2>
+        <p>Provided by the NYT's RSS Feed, here are some current tech news for your convenience</p>
+      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+ <div class="container-fluid newsbox" id="newsrow">
+              </div>
+      </div>
+    </section> <!-- End News Section -->
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-3">
+          <a href="index.html" class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <img src="img/logo.png" class="logo" alt="Atlas Security Logo">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-11 footer-about">
+         <div class="social-links d-flex mt-4">
+            <a target="_blank" href="https://www.twitter.com/atlas-security"><i class="bi bi-twitter"></i></a>
+            <a target="_blank" href="https://www.facebook.com/atlas-security"><i class="bi bi-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/atlas-security"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#useful-links">Links</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+
+            <li><a href="index.html#news">News</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-12 footer-contact">
+          <h4>Contact Us</h4>
+          <p>123 Street</p>
+          <p>America City, USA 12345</p>
+          <p>United States of America</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 123-456-7890</span></p>
+          <p><strong>Email:</strong> <span>info@atlassecurity.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
-  <script src="main.js"></script>
+
+  <!-- Libraries -->
+  <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="libraries/glightbox/js/glightbox.min.js"></script>
+  <script src="libraries/purecounter/purecounter_vanilla.js"></script>
+  <script src="libraries/swiper/swiper-bundle.min.js"></script>
+  <script src="libraries/aos/aos.js"></script>
+
+  <!-- JS Files -->
+  <script src="js/main.js"></script>
+  <script src="js/rssfeed.js"></script>
+
 </body>
+
 </html>
