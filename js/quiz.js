@@ -30,7 +30,7 @@ fetch(fileName)
   });
 
 const correctplus = 2;
-const maxQuestions = 50;
+const maxQuestions = 5;
 
 let getNewQuestion = () => {
   questionCounter++;
@@ -49,6 +49,7 @@ let getNewQuestion = () => {
   availableQuestions.splice(questionIndex, 1);
   acceptingQuestion = true;
   nextbtn.disabled = true;
+  nextbtn.classList.add("btn-disabled");
   choices.forEach((choice) => {
     choice.parentElement.classList.remove("correct");
     choice.parentElement.classList.remove("wrong");
@@ -68,6 +69,7 @@ choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     answerChoice(e);
     nextbtn.disabled = false;
+    nextbtn.classList.remove("btn-disabled");
   });
 });
 

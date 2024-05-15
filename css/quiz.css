@@ -50,20 +50,21 @@
       
       .choice-container:hover {
         cursor: pointer;
-        box-shadow: 0 0.4rem 1.4rem 0 lightblue;
+        box-shadow: 0 0.4rem 1.4rem rgb(89 85 77);
         transform: translateY(-0.1rem);
         transition: transform 150ms;
       }
       
       .letter {
         padding: 1.5rem 2.5rem;
-        background-color: lightblue;
+        background-color: var(--primary-color);
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        box-shadow: 5px 0 5px rgb(119 117 117 / 23%);
       }
       
       .answerText {
@@ -117,20 +118,20 @@
       }
       
       .nextBtn {
-        font-size: 0.9rem;
-        padding: 1rem 0;
-        width: 10rem;
-        text-align: center;
-        border: 0.1rem solid lightblue;
-        margin-bottom: 1.5rem;
-        background-color: white;
+        color: var(--default-color);
+    background: var(--primary-color);
+    border: 2px var(--primary-color);
+    font-size: 14px;
+    padding: 8px 26px;
+    margin: 0;
+    border-radius: 4px;
       }
       .arrowbtn {
         font-size: 1rem;
         padding: 1rem 0;
         width: 5rem;
         text-align: center;
-        border: 0.1rem solid lightblue;
+        border: 0.1rem solid var(--primary-color);
         margin-bottom: 1rem;
         background-color: white;
       }
@@ -163,19 +164,22 @@
       .disabled {
         cursor: not-allowed;
         pointer-events: none;
-        background-color: lightgray;
+        background-color: rgb(42, 42, 42);
       }
       
+      .btn-disabled {
+        color: lightgray;
+      }
       .select {
         background-color: rgb(230, 224, 224, 0.25) !important;
       }
       
       .wrong {
-        background-color: red !important;
+        background-color:  #7c0808 !important;
       }
       
       .correct {
-        background-color: green !important;
+        background-color: var(--primary-color) !important;
       }
       
       #hud {
@@ -196,14 +200,14 @@
       #progressbar {
         width: 10rem;
         height: 2rem;
-        border: 0.3rem solid lightblue;
+        border: 0.3rem solid  var(--primary-color);
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
       }
       
       #progressbarfull {
         height: 1.7rem;
-        background-color: lightblue;
+        background-color: var(--primary-color);
         width: 0%;
       }
 
