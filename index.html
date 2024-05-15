@@ -25,6 +25,7 @@
 
   <!-- Main CSS File -->
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/quiz.css" rel="stylesheet">
 
 </head>
 
@@ -713,7 +714,40 @@ Google systematically aggregates personal user data across its massive global
         <p>Have you been paying attention? Take five minutes to complete our short quiz and see how well you've understood our message!</p>
       </div><!-- End Section Title -->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
- <div class="container-fluid" id="">
+ <div class="container-fluid" id="quiz-container">
+  <div id="loadingdiv" class="container"><div id="loader"></div></div>
+    <div class="container">
+      <div id="game" class="justify-center flex-column hidden">
+        <div id="hud">
+          <div id="huditem">
+            <p id="progressText" class="hudprefix"></p>
+            <div id="progressbar">
+              <div id="progressbarfull"></div>
+            </div>
+          </div>
+        </div>
+        <h2 id="question"></h2>
+        <div class="choice-container">
+          <p class="letter">A</p>
+          <p class="answerText" data-number="1" id="one1"></p>
+        </div>
+        <div class="choice-container">
+          <p class="letter">B</p>
+          <p class="answerText" data-number="2" id="one2"></p>
+        </div>
+        <div class="choice-container">
+          <p class="letter">C</p>
+          <p class="answerText" data-number="3" id="one3"></p>
+        </div>
+        <div class="choice-container">
+          <p class="letter">D</p>
+          <p class="answerText" data-number="4" id="one4"></p>
+        </div>
+        <div class="justify-end">
+          <button class="nextBtn">Next</button>
+        </div>
+      </div>
+    </div>
               </div>
       </div>
     </section> <!-- End News Section -->
@@ -785,6 +819,7 @@ Google systematically aggregates personal user data across its massive global
   <!-- JS Files -->
   <script src="js/main.js"></script>
   <script src="js/rssfeed.js"></script>
+  <script src="js/quiz.js"></script>
 
 </body>
 
