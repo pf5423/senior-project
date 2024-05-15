@@ -4,7 +4,6 @@ const choices = Array.from(document.getElementsByClassName("answerText"));
 const texts = document.querySelectorAll(".answerText");
 const progressText = document.getElementById("progressText");
 const progressbarfull = document.getElementById("progressbarfull");
-const loader = document.getElementById("loadingdiv");
 const game = document.getElementById("game");
 
 
@@ -30,8 +29,8 @@ fetch(fileName)
     console.log(err);
   });
 
-const correctplus = testNum == "10" ? 2 : 4;
-const maxQuestions = testNum == "10" ? 50 : 25;
+const correctplus = 2;
+const maxQuestions = 50;
 
 let getNewQuestion = () => {
   questionCounter++;
@@ -63,7 +62,6 @@ let startGame = () => {
   availableQuestions = [...questions];
   getNewQuestion();
   game.classList.remove("hidden");
-  loader.classList.add("hidden");
 };
 
 choices.forEach((choice) => {
@@ -94,8 +92,7 @@ let answerChoice = (click) => {
 
 nextbtn.addEventListener("click", () => {
   if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-    localStorage.setItem(`unit${testNum}score`, score);
-    return window.location.assign(`unit${testNum}results.html`);
+    localStorage.setItem("quizScore", score);
   } else {
     getNewQuestion();
   }
