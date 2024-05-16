@@ -1,11 +1,13 @@
 const question = document.querySelector("#question");
 const nextbtn = document.querySelector(".nextBtn");
 const choices = Array.from(document.getElementsByClassName("answerText"));
+const choiceContainers = Array.from(document.getElementsByClassName("choice-container"));
 const texts = document.querySelectorAll(".answerText");
 const progressText = document.getElementById("progressText");
 const progressbarfull = document.getElementById("progressbarfull");
 const game = document.getElementById("game");
-
+const hud = document.getElementById("hud");
+const message  = document.getElementById("gameMessage");
 
 let currentQuestion = {};
 let acceptingQuestion = false;
@@ -62,6 +64,7 @@ let startGame = () => {
   score = 0;
   availableQuestions = [...questions];
   getNewQuestion();
+  message.classList.add("hidden");
   game.classList.remove("hidden");
 };
 
@@ -92,9 +95,24 @@ let answerChoice = (click) => {
   }
 };
 
+
+
 nextbtn.addEventListener("click", () => {
   if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-    localStorage.setItem("quizScore", score);
+    if (score == 10) {
+      message.textContent = "Congratulations! You're a data expert!";
+    }
+    else if (score > 0) {
+      message.textContent = "Good job! Let's do some review and score even higher!";
+    }
+    else {
+      message.textContent = "Oh no! You definitely didn't study! Try again!";
+    }
+    message.classList.remove("hidden");
+    nextbtn.textContent = "Restart";
+    nextbtn.addEventListener("click", () => {
+      location.reload();
+    });
   } else {
     getNewQuestion();
   }

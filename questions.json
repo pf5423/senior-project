@@ -1,80 +1,162 @@
 [
-    {
-      "question": "Mr. Bown uses his knowledge of a person's cognitive processes to design computer programs that are easier to use. Mr. Bown is most likely a(n) _____ psychologist. ",
-  
-      "choice1": "human factors",
-  
-      "choice2": "clinical ",
-  
-      "choice3": "developmental",
-  
-      "choice4": " biological ",
-  
-      "answer": 1
-    },
-    {
-      "question": "Mr. Bown uses his knowledge of a person's cognitive processes to design computer programs that are easier to use. Mr. Bown is most likely a(n) _____ psychologist. ",
-  
-      "choice1": "human factors",
-  
-      "choice2": "clinical ",
-  
-      "choice3": "developmental",
-  
-      "choice4": " biological ",
-  
-      "answer": 1
-    },
-    {
-      "question": "Mr. Bown uses his knowledge of a person's cognitive processes to design computer programs that are easier to use. Mr. Bown is most likely a(n) _____ psychologist. ",
-  
-      "choice1": "human factors",
-  
-      "choice2": "clinical ",
-  
-      "choice3": "developmental",
-  
-      "choice4": " biological ",
-  
-      "answer": 1
-    },
-    {
-      "question": "Mr. Bown uses his knowledge of a person's cognitive processes to design computer programs that are easier to use. Mr. Bown is most likely a(n) _____ psychologist. ",
-  
-      "choice1": "human factors",
-  
-      "choice2": "clinical ",
-  
-      "choice3": "developmental",
-  
-      "choice4": " biological ",
-  
-      "answer": 1
-    },
-    {
-      "question": "Mr. Bown uses his knowledge of a person's cognitive processes to design computer programs that are easier to use. Mr. Bown is most likely a(n) _____ psychologist. ",
-  
-      "choice1": "human factors",
-  
-      "choice2": "clinical ",
-  
-      "choice3": "developmental",
-  
-      "choice4": " biological ",
-  
-      "answer": 1
-    },
-    {
-      "question": "Mr. Bown uses his knowledge of a person's cognitive processes to design computer programs that are easier to use. Mr. Bown is most likely a(n) _____ psychologist. ",
-  
-      "choice1": "human factors",
-  
-      "choice2": "clinical ",
-  
-      "choice3": "developmental",
-  
-      "choice4": " biological ",
-  
-      "answer": 1
-    }
-]
+  {
+  "question": "What does the term 'phishing' refer to in cybersecurity?",
+  "choice1": "A type of malware",
+  "choice2": "An attempt to obtain sensitive information through deception",
+  "choice3": "A brute-force attack",
+  "choice4": "A denial-of-service attack",
+  "answer": 2
+  },
+  {
+  "question": "What is the purpose of a firewall in network security?",
+  "choice1": "To encrypt data",
+  "choice2": "To control incoming and outgoing network traffic",
+  "choice3": "To perform penetration testing",
+  "choice4": "To detect malware",
+  "answer": 2
+  },
+  {
+  "question": "What is the difference between symmetric and asymmetric encryption?",
+  "choice1": "Symmetric encryption uses the same key for encryption and decryption, while asymmetric encryption uses different keys",
+  "choice2": "There is no difference; they are the same",
+  "choice3": "Symmetric encryption is more secure than asymmetric encryption",
+  "choice4": "Asymmetric encryption is used for data in transit, while symmetric encryption is used for data at rest",
+  "answer": 1
+  },
+  {
+  "question": "What is a brute-force attack, and how can it be prevented?",
+  "choice1": "It is an attack that involves trying all possible combinations of passwords or encryption keys, and it can be prevented by using strong passwords and limiting login attempts",
+  "choice2": "It is a type of malware, and it can be prevented by using antivirus software",
+  "choice3": "It is a type of phishing attack, and it can be prevented by user education",
+  "choice4": "It is a type of denial-of-service attack, and it can be prevented by using a firewall",
+  "answer": 1
+  },
+  {
+  "question": "What is the purpose of two-factor authentication (2FA)?",
+  "choice1": "To encrypt data",
+  "choice2": "To add an extra layer of security by requiring a second form of authentication",
+  "choice3": "To perform penetration testing",
+  "choice4": "To detect malware",
+  "answer": 2
+  },
+  {
+  "question": "What is a man-in-the-middle (MITM) attack?",
+  "choice1": "A type of malware",
+  "choice2": "An attempt to obtain sensitive information through deception",
+  "choice3": "An attack where the attacker intercepts and potentially modifies communication between two parties",
+  "choice4": "A denial-of-service attack",
+  "answer": 3
+  },
+  {
+  "question": "What is the difference between a virus and a worm in the context of malware?",
+  "choice1": "There is no difference; they are the same",
+  "choice2": "A virus requires human action to spread, while a worm can spread automatically",
+  "choice3": "A worm requires human action to spread, while a virus can spread automatically",
+  "choice4": "A virus is more harmful than a worm",
+  "answer": 2
+  },
+  {
+  "question": "What is the purpose of penetration testing in cybersecurity?",
+  "choice1": "To encrypt data",
+  "choice2": "To perform ethical hacking to identify vulnerabilities",
+  "choice3": "To detect malware",
+  "choice4": "To control incoming and outgoing network traffic",
+  "answer": 2
+  },
+  {
+  "question": "What is the principle of least privilege, and why is it important?",
+  "choice1": "It is a type of encryption, and it is important for data security",
+  "choice2": "It is a type of attack, and it is important to understand for security purposes",
+  "choice3": "It means granting users the minimum level of access necessary for their roles, and it is important to minimize the potential for abuse or misuse of privileges",
+  "choice4": "It is a type of firewall, and it is important for network security",
+  "answer": 3
+  },
+  {
+  "question": "What is a SQL injection attack, and how can it be prevented?",
+  "choice1": "It is a type of malware, and it can be prevented by using antivirus software",
+  "choice2": "It is an attempt to inject malicious code into applications that use SQL databases, and it can be prevented by input validation and parameterized queries",
+  "choice3": "It is a type of phishing attack, and it can be prevented by user education",
+  "choice4": "It is a type of denial-of-service attack, and it can be prevented by using a firewall",
+  "answer": 2
+  },
+  {
+  "question": "What is the purpose of data encryption at rest and in transit?",
+  "choice1": "To control incoming and outgoing network traffic",
+  "choice2": "To perform penetration testing",
+  "choice3": "To protect sensitive data from unauthorized access or interception",
+  "choice4": "To detect malware",
+  "answer": 3
+  },
+  {
+  "question": "What is the difference between black-box and white-box testing in cybersecurity?",
+  "choice1": "There is no difference; they are the same",
+  "choice2": "Black-box testing involves testing without knowledge of the internal workings, while white-box testing involves testing with full knowledge of the internal workings",
+  "choice3": "White-box testing involves testing without knowledge of the internal workings, while black-box testing involves testing with full knowledge of the internal workings",
+  "choice4": "Black-box testing is more thorough than white-box testing",
+  "answer": 2
+  },
+  {
+  "question": "What is a distributed denial-of-service (DDoS) attack?",
+  "choice1": "A type of malware",
+  "choice2": "An attempt to obtain sensitive information through deception",
+  "choice3": "An attack that aims to make a service or website unavailable by overwhelming it with traffic from multiple sources",
+  "choice4": "A brute-force attack",
+  "answer": 3
+  },
+  {
+  "question": "What is the purpose of a web application firewall (WAF)?",
+  "choice1": "To encrypt data",
+  "choice2": "To control incoming and outgoing network traffic for web applications",
+  "choice3": "To perform penetration testing",
+  "choice4": "To detect malware in web applications",
+  "answer": 2
+  },
+  {
+  "question": "What is the difference between a vulnerability and an exploit in cybersecurity?",
+  "choice1": "There is no difference; they are the same",
+  "choice2": "A vulnerability is a weakness that can be exploited, while an exploit is a piece of code or technique that takes advantage of a vulnerability",
+  "choice3": "An exploit is a weakness that can be exploited, while a vulnerability is a piece of code or technique that takes advantage of a weakness",
+  "choice4": "A vulnerability is more harmful than an exploit",
+  "answer": 2
+  },
+  {
+  "question": "What is the role of incident response in cybersecurity?",
+  "choice1": "To encrypt data",
+  "choice2": "To control incoming and outgoing network traffic",
+  "choice3": "To detect, analyze, and respond to security incidents or breaches",
+  "choice4": "To perform penetration testing",
+  "answer": 3
+  },
+  {
+  "question": "What is the purpose of security information and event management (SIEM) systems?",
+  "choice1": "To encrypt data",
+  "choice2": "To control incoming and outgoing network traffic",
+  "choice3": "To collect and analyze security-related data from various sources for threat detection and incident response",
+  "choice4": "To perform penetration testing",
+  "answer": 3
+  },
+  {
+  "question": "What is the difference between active and passive reconnaissance in cybersecurity?",
+  "choice1": "There is no difference; they are the same",
+  "choice2": "Active reconnaissance involves directly interacting with the target system, while passive reconnaissance involves gathering information without direct interaction",
+  "choice3": "Passive reconnaissance involves directly interacting with the target system, while active reconnaissance involves gathering information without direct interaction",
+  "choice4": "Active reconnaissance is more thorough than passive reconnaissance",
+  "answer": 2
+  },
+  {
+  "question": "What is the purpose of a security operations center (SOC)?",
+  "choice1": "To encrypt data",
+  "choice2": "To control incoming and outgoing network traffic",
+  "choice3": "To monitor, analyze, and respond to security incidents and threats",
+  "choice4": "To perform penetration testing",
+  "answer": 3
+  },
+  {
+  "question": "What is the principle of defense in depth, and why is it important in cybersecurity?",
+  "choice1": "It is a type of encryption, and it is important for data security",
+  "choice2": "It is a type of attack, and it is important to understand for security purposes",
+  "choice3": "It involves implementing multiple layers of security controls to protect against different types of threats, and it is important because a single security measure may not be",
+  "choice4": "It is not important",
+  "answer": 3
+  }
+  ]

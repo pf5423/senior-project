@@ -73,15 +73,13 @@
       }
     
       .container {
-        width: 100vw;
+        width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 40rem;
+        max-width: 80rem;
         margin: 0 auto;
-        margin-top: 1rem;
-        padding: 2rem;
       }
       
       
@@ -114,7 +112,7 @@
       }
       
       .hidden {
-        display: none;
+        display: none !important;
       }
       
       .nextBtn {
@@ -125,6 +123,8 @@
     padding: 8px 26px;
     margin: 0;
     border-radius: 4px;
+    width: 15rem;
+    height: 3rem;
       }
       .arrowbtn {
         font-size: 1rem;
@@ -185,7 +185,6 @@
       #hud {
         display: flex;
         justify-content: space-between;
-        margin-top: 1rem;
       }
       
       .hudprefix {
@@ -210,5 +209,16 @@
         background-color: var(--primary-color);
         width: 0%;
       }
+      #gameMessage {
+        margin-top: 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+      }
 
+      
+@media (max-width: 767px) {
+  .nextBtn {
+    width: 75%;
+  }
+}
 }
